@@ -3,10 +3,11 @@
 # If the file’s name ends with some other suffix or has no suffix at all, output application/octet-stream instead, which is a common default.
 
 def main():
-    ext = sep_endings()
+    filename = input("File: ")
+    ext = sep_endings(filename)
     check_ext(ext)
 
-def sep_endings():
+def sep_endings(filename):
     file_end = filename.split(sep=".")
     return file_end[-1]
 
@@ -21,5 +22,4 @@ def check_ext(ext):
         case _:
             print("application/octet-stream")
 
-filename = input("File: ")
 main()
