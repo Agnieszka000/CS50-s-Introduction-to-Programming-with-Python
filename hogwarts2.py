@@ -1,4 +1,6 @@
-# Dictionary's values are stored in {}.
+Check
+
+# Dictionary's values are stored in {}. 
 # To make it look neat, store variables in columns.
 
 students = {"Hermione": "Gryffindor", 
